@@ -4,11 +4,9 @@ import DeleteIcon from "@mui/icons-material/Delete";
 
 function ItemCount() {
   const [numberCount, setNumberCount] = React.useState(0);
-  const [date, setDate] = React.useState("");
 
   function clickCount() {
     setNumberCount(numberCount + 1);
-    setDate(new Date().toString());
   }
 
   function clickRestCount() {
@@ -21,9 +19,7 @@ function ItemCount() {
 
   return (
     <div>
-      <h1>PRODUCT CARD</h1>
       <br />
-      {date}
       <Button variant="contained" onClick={() => clickRestCount()}>
         {"-"}
       </Button>

@@ -1,4 +1,4 @@
-const CoffeeApi = async () => {
+const coffeeApi = async () => {
   const url = "https://api.sampleapis.com/coffee/hot";
   const resp = await fetch(url);
   const data = await resp.json();
@@ -15,4 +15,4 @@ const CoffeeApi = async () => {
   return products;
 };
 
-export default CoffeeApi;
+export default coffeeApi;
