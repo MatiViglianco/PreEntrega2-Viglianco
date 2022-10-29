@@ -3,7 +3,7 @@ import ItemListConteiner from "../../components/Home/ItemListConteiner";
 
 function Home() {
   return (
-    <div>
+    <div style={{ backgroundColor: "#ededed" }}>
       <ItemListConteiner />
     </div>
   );

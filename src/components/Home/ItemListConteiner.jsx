@@ -17,9 +17,9 @@ const ItemListConteiner = () => {
   return (
     <React.Fragment>
       <CssBaseline />
-      <Container maxWidth="m">
+      <Container className={styles.conta} maxWidth="m">
         <Box className={styles.box}>
-          {data?.map((product) => {
+          {data.slice(0, 12)?.map((product) => {
             const item = {
               id: product.id,
               title: product.title,

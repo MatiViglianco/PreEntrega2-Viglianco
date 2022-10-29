@@ -7,7 +7,7 @@ import { CardActionArea, CardActions } from "@mui/material";
 
 function CardProduct({ product }) {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card>
       <CardActionArea>
         <CardActions>
           <CardMedia
