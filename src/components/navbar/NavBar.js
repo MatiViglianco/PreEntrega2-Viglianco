@@ -108,7 +108,7 @@ const ResponsiveAppBar = () => {
                 src={CoffeeMini}
                 alt="logo"
                 style={{
-                  height: "80px",
+                  width: "200px",
                 }}
               />
             </Typography>
@@ -126,7 +126,7 @@ const ResponsiveAppBar = () => {
             <Box sx={{ flexGrow: 0 }}>
               <Tooltip title="Open cart">
                 <IconButton>
-                  <img src={cart} alt="cart" />
+                  <img src={cart} alt="cart" style={{ width: "30px" }} />
                 </IconButton>
               </Tooltip>
             </Box>

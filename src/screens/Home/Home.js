@@ -1,9 +1,9 @@
-import "./Home.css";
 import ItemListConteiner from "../../components/Home/ItemListConteiner";
+import styles from "./styles.module.css";
 
 function Home() {
   return (
-    <div style={{ backgroundColor: "#ededed" }}>
+    <div className={styles.home}>
       <ItemListConteiner />
     </div>
   );

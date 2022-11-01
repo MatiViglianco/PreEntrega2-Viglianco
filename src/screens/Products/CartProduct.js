@@ -1,34 +1,37 @@
 import * as React from "react";
 import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import { CardActionArea, CardActions } from "@mui/material";
+import styles from "./styles.module.css";
 
 function CardProduct({ product }) {
   return (
-    <Card>
-      <CardActionArea>
-        <CardActions>
-          <CardMedia
-            component="img"
-            height="140"
-            alt={`products/${product.id}`}
-            src={product.pictureUrl}
-          />
-          <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
-              {product.title}
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-              {product.description}
-            </Typography>
-            <Typography variant="h3" color="text.dark">
-              {product.price}
-            </Typography>
-          </CardContent>
-        </CardActions>
-      </CardActionArea>
+    <Card className={styles.card}>
+      <img
+        className={styles.img}
+        component="img"
+        alt={`products/${product.id}`}
+        src={product.pictureUrl}
+      />
+      <div className={styles.content}>
+        <div className={styles.title}>
+          <Typography gutterBottom variant="h3" component="div">
+            {product.title}
+          </Typography>
+          <Typography
+            style={{ marginRight: "1rem" }}
+            variant="h4"
+            color="text.dark"
+          >
+            {product.price}
+          </Typography>
+        </div>
+        <Typography
+          style={{ paddingBottom: "4rem", width: "80%" }}
+          variant="body1"
+        >
+          {product.description}
+        </Typography>
+      </div>
     </Card>
   );
 }
